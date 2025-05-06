@@ -70,4 +70,4 @@ class AI13Player(BasePokerPlayer):
         pass
 
 def setup_ai():
-    return Group14Player()
+    return AI13Player()

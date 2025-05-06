@@ -11,6 +11,7 @@ from argparse import ArgumentParser
 from randomplayer import RandomPlayer
 from raise_player import RaisedPlayer
 from pokerBotPlayer import PokerBotPlayer
+from AI13Player import AI13Player
 # from smartwarrior import SmartWarrior
 """ ========================================================= """
 
@@ -43,7 +44,8 @@ def testperf(agent_name1, agent1_class, agent_name2, agent2_class):
 	player_classes = {
         'RandomPlayer': RandomPlayer,
         'RaisedPlayer': RaisedPlayer,
-        'PokerBotPlayer': PokerBotPlayer
+        'PokerBotPlayer': PokerBotPlayer,
+		'AI13Player': AI13Player
     }
     
 	agent1 = player_classes[agent1_class]()
