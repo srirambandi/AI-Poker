@@ -15,7 +15,7 @@ class AI13Player(BasePokerPlayer):
         self.policy = self.load_policy()
 
     def get_state(self, hole_cards, community_cards, street):
-        state = self.state_abstraction.getAbstractState(hole_cards, community_cards, street)
+        state = self.state_abstraction.get_abstract_state(hole_cards, community_cards, street)
         return state
     
     def load_policy(self):

@@ -11,7 +11,7 @@ class StateAbtraction(object):
         }
 
     #  take hole cards and return one of 8 abstract state buckets
-    def preFlopAbstraction(self, holeCards):
+    def pre_flop_abstraction(self, holeCards):
         PRE_FLOP_CHART = [
             # A   K   Q   J   T   9   8   7   6   5   4  3  2
             [ 8,  8,  8,  8,  8,  7,  6,  5,  4,  4,  4, 4, 4], #A
@@ -68,7 +68,7 @@ class StateAbtraction(object):
     # for pairs, three of a kind & four of a kind
     # 1 if it exists
     # 0 if not
-    def haveOfAKind(self, cards, quantity):
+    def have_of_a_kind(self, cards, quantity):
         if len(cards) < quantity:
             return (0, None)
         
@@ -87,7 +87,7 @@ class StateAbtraction(object):
 
     # 1 if we have two pair
     # -1 if one card away from two pair, -2 if two cards away, -3 if three cards away
-    def haveTwoPair(self, cards):
+    def have_two_pair(self, cards):
         # if we have two cards (preflop) we are always two cards away from two pair
         if len(cards) < 4:
             highCount = 0
@@ -140,7 +140,7 @@ class StateAbtraction(object):
 
     # 1 if we have a straight
     # negative number representing how many cards away we are from making a straight
-    def haveStraight(self, cards):
+    def have_straight(self, cards):
         if len(cards) < 5:
             return (-5, None)  # we need at least 5 cards to make a straight
         
@@ -202,7 +202,7 @@ class StateAbtraction(object):
 
     # 1 if we have a flush
     # negative number representing how many cards away we are from making a flush
-    def haveFlush(self, cards):
+    def have_flush(self, cards):
         if len(cards) < 5:
             return (-5, None)  # we need at least 5 cards to make a flush
         
@@ -237,7 +237,7 @@ class StateAbtraction(object):
 
     # 1 if we have a full house
     # negative number representing how many cards away we are from making a full house
-    def haveFullHouse(self, cards):
+    def have_full_house(self, cards):
         if len(cards) < 5:
             return (-5, None)  # we need at least 5 cards to make a full house
         
@@ -323,7 +323,7 @@ class StateAbtraction(object):
 
     # 1 if we have a straight flush
     # negative number representing how many cards away we are from making a straight flush
-    def haveStraightFlush(self, cards):
+    def have_straight_flush(self, cards):
         if len(cards) < 5:
             return (-5, None)  # we need at least 5 cards to make a straight flush
         
@@ -339,7 +339,7 @@ class StateAbtraction(object):
             if len(suitedCards) >= 5:
                 # We have enough cards of this suit for a straight flush
                 # Check if we have a straight with these cards
-                straightResult = self.haveStraight(suitedCards)
+                straightResult = self.have_straight(suitedCards)
                 if straightResult[0] == 1:
                     return (1, straightResult[1])  # we have a straight flush with the same quality
                 elif straightResult[0] > bestDistance:
@@ -357,7 +357,7 @@ class StateAbtraction(object):
 
     # 1 if we have a royal flush
     # negative number representing how many cards away we are from making a royal flush
-    def haveRoyalFlush(self, cards):
+    def have_royal_flush(self, cards):
         if len(cards) < 5:
             return (-5, None)  # we need at least 5 cards to make a royal flush
         
@@ -383,12 +383,12 @@ class StateAbtraction(object):
         return (bestDistance, "high")  # Royal flush is always categorized as high
 
 
-    def getAbstractState(self, holeCards, communityCards, street):
+    def get_abstract_state(self, holeCards, communityCards, street):
         allCards = holeCards + communityCards
 
         # handle preflop separately
         if street == "preflop":
-            return self.preFlopAbstraction(holeCards)
+            return self.pre_flop_abstraction(holeCards)
 
         # Dictionary to track the best hand type with community cards only
         bestCommunityHand = {
@@ -405,26 +405,26 @@ class StateAbtraction(object):
         }
         
         # calculate what we have with just community cards
-        pairComm = self.haveOfAKind(communityCards, 2)
-        threeComm = self.haveOfAKind(communityCards, 3)
-        fourComm = self.haveOfAKind(communityCards, 4)
-        twoPairComm = self.haveTwoPair(communityCards)
-        straightComm = self.haveStraight(communityCards)
-        flushComm = self.haveFlush(communityCards)
-        fullHouseComm = self.haveFullHouse(communityCards)
-        straightFlushComm = self.haveStraightFlush(communityCards)
-        royalFlushComm = self.haveRoyalFlush(communityCards)
+        pairComm = self.have_of_a_kind(communityCards, 2)
+        threeComm = self.have_of_a_kind(communityCards, 3)
+        fourComm = self.have_of_a_kind(communityCards, 4)
+        twoPairComm = self.have_two_pair(communityCards)
+        straightComm = self.have_straight(communityCards)
+        flushComm = self.have_flush(communityCards)
+        fullHouseComm = self.have_full_house(communityCards)
+        straightFlushComm = self.have_straight_flush(communityCards)
+        royalFlushComm = self.have_royal_flush(communityCards)
 
         # calculate what we have with all cards
-        pair = self.haveOfAKind(allCards, 2)
-        three = self.haveOfAKind(allCards, 3)
-        four = self.haveOfAKind(allCards, 4)
-        twoPair = self.haveTwoPair(allCards)
-        straight = self.haveStraight(allCards)
-        flush = self.haveFlush(allCards)
-        fullHouse = self.haveFullHouse(allCards)
-        straightFlush = self.haveStraightFlush(allCards)
-        royalFlush = self.haveRoyalFlush(allCards)
+        pair = self.have_of_a_kind(allCards, 2)
+        three = self.have_of_a_kind(allCards, 3)
+        four = self.have_of_a_kind(allCards, 4)
+        twoPair = self.have_two_pair(allCards)
+        straight = self.have_straight(allCards)
+        flush = self.have_flush(allCards)
+        fullHouse = self.have_full_house(allCards)
+        straightFlush = self.have_straight_flush(allCards)
+        royalFlush = self.have_royal_flush(allCards)
 
         # Determine highest card in hole cards and community cards
         highestHoleCard = max([self.valueDict[card[1]] for card in holeCards], default=0)
@@ -612,7 +612,7 @@ class StateAbtraction(object):
         # Check for drawing hands (-1/-2) only if they're better than what community cards offer
         if not isCommunityBest:
             # Helper function to check if hole cards contribute to the hand
-            def holeCardsContribute(hand_type, value=None):
+            def hole_cards_contribute(hand_type, value=None):
                 if hand_type == "straight":
                     # Check if any hole card is part of the potential straight
                     straightCards = []
@@ -643,12 +643,12 @@ class StateAbtraction(object):
                     
                 elif hand_type == "straightFlush":
                     # Check if hole cards contribute to both a straight and a flush
-                    return holeCardsContribute("straight") and holeCardsContribute("flush")
+                    return hole_cards_contribute("straight") and hole_cards_contribute("flush")
                 
                 return False
 
             # Check for almost straight - separate flop (-1F) and turn (-1T) buckets
-            if straight[0] == -1 and holeCardsContribute("straight"):
+            if straight[0] == -1 and hole_cards_contribute("straight"):
                 if street == "flop":
                     if straight[1] == "high":
                         validBuckets["straightHigh-1F"] = True
@@ -661,16 +661,16 @@ class StateAbtraction(object):
                         validBuckets["straightLow-1T"] = True
             
             # Check for almost flush - separate flop (-1F) and turn (-1T) buckets
-            if flush[0] == -1 and holeCardsContribute("flush"):
+            if flush[0] == -1 and hole_cards_contribute("flush"):
                 if street == "flop":
                     validBuckets["flush-1F"] = True
                 elif street == "turn":
                     validBuckets["flush-1T"] = True
-            elif flush[0] == -2 and street == "flop" and holeCardsContribute("flush"):
+            elif flush[0] == -2 and street == "flop" and hole_cards_contribute("flush"):
                 validBuckets["flush-2"] = True
             
             # Check for almost straight flush - separate flop (-1F) and turn (-1T) buckets
-            if straightFlush[0] == -1 and holeCardsContribute("straightFlush"):
+            if straightFlush[0] == -1 and hole_cards_contribute("straightFlush"):
                 if street == "flop":
                     validBuckets["straightFlush-1F"] = True
                 elif street == "turn":
