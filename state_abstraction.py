@@ -1,7 +1,7 @@
 from time import sleep
 import random as rand
 
-class StateAbtraction(object):
+class StateAbstraction(object):
 
     def __init__(self):
         # sum card values to determine if we have high, mid, or low cards

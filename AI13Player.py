@@ -4,13 +4,13 @@ from pypokerengine.engine.card import Card
 from pypokerengine.engine.hand_evaluator import HandEvaluator
 from pypokerengine.players import BasePokerPlayer
 
-from state_abtraction import StateAbtraction
+from state_abstraction import StateAbstraction
 
 class AI13Player(BasePokerPlayer):
 
     def __init__(self, policy_file="AI13_Policy.json"):
         super().__init__()
-        self.state_abstraction = StateAbtraction()
+        self.state_abstraction = StateAbstraction()
         self.policy_file = policy_file
         self.policy = self.load_policy()
 
