@@ -2,7 +2,7 @@ from pypokerengine.engine.hand_evaluator import HandEvaluator
 from pypokerengine.players import BasePokerPlayer
 from pypokerengine.engine.card import Card
 
-class HeuristicPlayer(BasePokerPlayer):
+class HandPlayer(BasePokerPlayer):
     def __init__(self, epsilon=52000):
         super().__init__()
         self.hand_evaluator = HandEvaluator()
@@ -46,4 +46,4 @@ class HeuristicPlayer(BasePokerPlayer):
         pass
 
 def setup_ai():
-    return HeuristicPlayer()
+    return HandPlayer()
