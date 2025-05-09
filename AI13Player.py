@@ -6,7 +6,7 @@ from state_abstraction import StateAbstraction
 
 
 class AI13Player(BasePokerPlayer):
-	def __init__(self, treeFile="AI13Player_MCTS.json"):
+	def __init__(self, treeFile="trained_mcts_tree2000.json"):
 		# initialize hand counter to track the number of hands played
 		self.handCount = 0
 		self.stateAbstractor = StateAbstraction()

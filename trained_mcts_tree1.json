@@ -1,0 +1,2774 @@
+{
+  "root": "0",
+  "simulationDepth": 20,
+  "nodes": {
+    "0": {
+      "id": "0",
+      "state": "root",
+      "action": null,
+      "visits": 100000000,
+      "value": 9997612.5811383,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "preflop",
+      "raiseCount": 0,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "1"
+      }
+    },
+    "1": {
+      "id": "1",
+      "state": "5",
+      "action": "deal",
+      "visits": 99999999,
+      "value": -9997613.581138296,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "preflop",
+      "raiseCount": 0,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "2",
+        "raise": "3",
+        "call": "4"
+      }
+    },
+    "2": {
+      "id": "2",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 510,
+      "value": -510,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 0,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "3": {
+      "id": "3",
+      "state": "5",
+      "action": "raise",
+      "visits": 99998978,
+      "value": 9998634.581134493,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "preflop",
+      "raiseCount": 1,
+      "streetRaiseCount": 1,
+      "children": {
+        "call": "5",
+        "raise": "6",
+        "fold": "7"
+      }
+    },
+    "4": {
+      "id": "4",
+      "state": "5",
+      "action": "call",
+      "visits": 510,
+      "value": -510,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "preflop",
+      "raiseCount": 0,
+      "streetRaiseCount": 0,
+      "children": {
+        "raise": "8",
+        "call": "9",
+        "fold": "10"
+      }
+    },
+    "5": {
+      "id": "5",
+      "state": "5",
+      "action": "call",
+      "visits": 47,
+      "value": -46.5,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "11"
+      }
+    },
+    "6": {
+      "id": "6",
+      "state": "5",
+      "action": "raise",
+      "visits": 99998884,
+      "value": -9998728.081134154,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "preflop",
+      "raiseCount": 2,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "12",
+        "fold": "13"
+      }
+    },
+    "7": {
+      "id": "7",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 46,
+      "value": -46,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "8": {
+      "id": "8",
+      "state": "5",
+      "action": "raise",
+      "visits": 503,
+      "value": 503,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "preflop",
+      "raiseCount": 1,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "14",
+        "call": "15",
+        "raise": "16"
+      }
+    },
+    "9": {
+      "id": "9",
+      "state": "5",
+      "action": "call",
+      "visits": 3,
+      "value": -3,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 0,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "17"
+      }
+    },
+    "10": {
+      "id": "10",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 3,
+      "value": -3,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 0,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "11": {
+      "id": "11",
+      "state": "flush",
+      "action": "deal",
+      "visits": 46,
+      "value": 45.5,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "18",
+        "raise": "19",
+        "call": "20"
+      }
+    },
+    "12": {
+      "id": "12",
+      "state": "5",
+      "action": "call",
+      "visits": 99998627,
+      "value": 9998985.081133196,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "preflop",
+      "raiseCount": 2,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "21",
+        "fold": "22"
+      }
+    },
+    "13": {
+      "id": "13",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 256,
+      "value": -256,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "14": {
+      "id": "14",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 168,
+      "value": -168,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "15": {
+      "id": "15",
+      "state": "5",
+      "action": "call",
+      "visits": 167,
+      "value": -167,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "preflop",
+      "raiseCount": 1,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "23",
+        "call": "24",
+        "raise": "25"
+      }
+    },
+    "16": {
+      "id": "16",
+      "state": "5",
+      "action": "raise",
+      "visits": 167,
+      "value": -167,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "preflop",
+      "raiseCount": 2,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "26",
+        "fold": "27"
+      }
+    },
+    "17": {
+      "id": "17",
+      "state": "fourLow",
+      "action": "deal",
+      "visits": 2,
+      "value": 2,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 0,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "28"
+      }
+    },
+    "18": {
+      "id": "18",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 15,
+      "value": -15,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "19": {
+      "id": "19",
+      "state": "flush",
+      "action": "raise",
+      "visits": 14,
+      "value": -14,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 1,
+      "children": {
+        "raise": "29",
+        "fold": "30",
+        "call": "31"
+      }
+    },
+    "20": {
+      "id": "20",
+      "state": "flush",
+      "action": "call",
+      "visits": 16,
+      "value": -15.5,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {
+        "raise": "32",
+        "fold": "33",
+        "call": "34"
+      }
+    },
+    "21": {
+      "id": "21",
+      "state": "5",
+      "action": "call",
+      "visits": 99998494,
+      "value": 9999118.0811327,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "35"
+      }
+    },
+    "22": {
+      "id": "22",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 132,
+      "value": -132,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "23": {
+      "id": "23",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 3,
+      "value": -3,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "24": {
+      "id": "24",
+      "state": "5",
+      "action": "call",
+      "visits": 3,
+      "value": -3,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "36"
+      }
+    },
+    "25": {
+      "id": "25",
+      "state": "5",
+      "action": "raise",
+      "visits": 160,
+      "value": 160,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "preflop",
+      "raiseCount": 2,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "37",
+        "call": "38"
+      }
+    },
+    "26": {
+      "id": "26",
+      "state": "5",
+      "action": "call",
+      "visits": 83,
+      "value": -83,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "39"
+      }
+    },
+    "27": {
+      "id": "27",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 83,
+      "value": -83,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "28": {
+      "id": "28",
+      "state": "fourLow",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 0,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "29": {
+      "id": "29",
+      "state": "flush",
+      "action": "raise",
+      "visits": 11,
+      "value": 11,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "40",
+        "call": "41"
+      }
+    },
+    "30": {
+      "id": "30",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "31": {
+      "id": "31",
+      "state": "flush",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "32": {
+      "id": "32",
+      "state": "flush",
+      "action": "raise",
+      "visits": 13,
+      "value": 13,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 1,
+      "children": {
+        "call": "42",
+        "fold": "43",
+        "raise": "44"
+      }
+    },
+    "33": {
+      "id": "33",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "34": {
+      "id": "34",
+      "state": "flush",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "35": {
+      "id": "35",
+      "state": "twoPairLowLow",
+      "action": "deal",
+      "visits": 99998493,
+      "value": -9999119.081132697,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "raise": "45",
+        "call": "46",
+        "fold": "47"
+      }
+    },
+    "36": {
+      "id": "36",
+      "state": "fourHigh",
+      "action": "deal",
+      "visits": 2,
+      "value": 2,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "48"
+      }
+    },
+    "37": {
+      "id": "37",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 80,
+      "value": -80,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "38": {
+      "id": "38",
+      "state": "5",
+      "action": "call",
+      "visits": 79,
+      "value": -79,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "preflop",
+      "raiseCount": 2,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "49",
+        "call": "50"
+      }
+    },
+    "39": {
+      "id": "39",
+      "state": "highCardHigh",
+      "action": "deal",
+      "visits": 82,
+      "value": 82,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "raise": "51",
+        "call": "52",
+        "fold": "53"
+      }
+    },
+    "40": {
+      "id": "40",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 5,
+      "value": -5,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "41": {
+      "id": "41",
+      "state": "flush",
+      "action": "call",
+      "visits": 5,
+      "value": -5,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "54",
+        "fold": "55"
+      }
+    },
+    "42": {
+      "id": "42",
+      "state": "flush",
+      "action": "call",
+      "visits": 4,
+      "value": -4,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "56",
+        "call": "57",
+        "raise": "58"
+      }
+    },
+    "43": {
+      "id": "43",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 4,
+      "value": -4,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "44": {
+      "id": "44",
+      "state": "flush",
+      "action": "raise",
+      "visits": 4,
+      "value": -4,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "59",
+        "fold": "60"
+      }
+    },
+    "45": {
+      "id": "45",
+      "state": "twoPairLowLow",
+      "action": "raise",
+      "visits": 99998384,
+      "value": 9999224.281132305,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "raise": "61",
+        "fold": "62",
+        "call": "63"
+      }
+    },
+    "46": {
+      "id": "46",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 62,
+      "value": -58.2,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "64",
+        "raise": "65",
+        "fold": "66"
+      }
+    },
+    "47": {
+      "id": "47",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 46,
+      "value": -46,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "48": {
+      "id": "48",
+      "state": "fourHigh",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 1,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "49": {
+      "id": "49",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 39,
+      "value": -39,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "50": {
+      "id": "50",
+      "state": "5",
+      "action": "call",
+      "visits": 39,
+      "value": -39,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "67"
+      }
+    },
+    "51": {
+      "id": "51",
+      "state": "highCardHigh",
+      "action": "raise",
+      "visits": 27,
+      "value": -27,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "raise": "68",
+        "call": "69",
+        "fold": "70"
+      }
+    },
+    "52": {
+      "id": "52",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 27,
+      "value": -27,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "71",
+        "fold": "72",
+        "raise": "73"
+      }
+    },
+    "53": {
+      "id": "53",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 27,
+      "value": -27,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "54": {
+      "id": "54",
+      "state": "flush",
+      "action": "call",
+      "visits": 2,
+      "value": -2,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "74"
+      }
+    },
+    "55": {
+      "id": "55",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 2,
+      "value": -2,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "56": {
+      "id": "56",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "57": {
+      "id": "57",
+      "state": "flush",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "58": {
+      "id": "58",
+      "state": "flush",
+      "action": "raise",
+      "visits": 1,
+      "value": 1,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 2,
+      "children": {}
+    },
+    "59": {
+      "id": "59",
+      "state": "flush",
+      "action": "call",
+      "visits": 2,
+      "value": -2,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "75"
+      }
+    },
+    "60": {
+      "id": "60",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "61": {
+      "id": "61",
+      "state": "twoPairLowLow",
+      "action": "raise",
+      "visits": 717,
+      "value": -292.8000000000022,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "76",
+        "fold": "77"
+      }
+    },
+    "62": {
+      "id": "62",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 31,
+      "value": -31,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "63": {
+      "id": "63",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 99997635,
+      "value": 9998963.481133282,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "78"
+      }
+    },
+    "64": {
+      "id": "64",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 3,
+      "value": -2.3,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "79"
+      }
+    },
+    "65": {
+      "id": "65",
+      "state": "twoPairLowLow",
+      "action": "raise",
+      "visits": 56,
+      "value": 52.9,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "80",
+        "call": "81",
+        "raise": "82"
+      }
+    },
+    "66": {
+      "id": "66",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 2,
+      "value": -2,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "67": {
+      "id": "67",
+      "state": "fullHouseLowLow",
+      "action": "deal",
+      "visits": 38,
+      "value": 38,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "83",
+        "fold": "84",
+        "raise": "85"
+      }
+    },
+    "68": {
+      "id": "68",
+      "state": "highCardHigh",
+      "action": "raise",
+      "visits": 23,
+      "value": 23,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "86",
+        "fold": "87"
+      }
+    },
+    "69": {
+      "id": "69",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 2,
+      "value": -2,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "88"
+      }
+    },
+    "70": {
+      "id": "70",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "71": {
+      "id": "71",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 2,
+      "value": -2,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "89"
+      }
+    },
+    "72": {
+      "id": "72",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "73": {
+      "id": "73",
+      "state": "highCardHigh",
+      "action": "raise",
+      "visits": 23,
+      "value": 23,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "90",
+        "call": "91",
+        "raise": "92"
+      }
+    },
+    "74": {
+      "id": "74",
+      "state": "straightHigh",
+      "action": "deal",
+      "visits": 1,
+      "value": 1,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "75": {
+      "id": "75",
+      "state": "fourHigh",
+      "action": "deal",
+      "visits": 1,
+      "value": 1,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "76": {
+      "id": "76",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 696,
+      "value": 313.80000000000274,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "93",
+        "call": "94"
+      }
+    },
+    "77": {
+      "id": "77",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 20,
+      "value": -20,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "78": {
+      "id": "78",
+      "state": "royalFlush",
+      "action": "deal",
+      "visits": 99997634,
+      "value": -9998964.481133278,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "95",
+        "raise": "96",
+        "call": "97"
+      }
+    },
+    "79": {
+      "id": "79",
+      "state": "highCardHigh",
+      "action": "deal",
+      "visits": 2,
+      "value": 2,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "98"
+      }
+    },
+    "80": {
+      "id": "80",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 16,
+      "value": -16,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "81": {
+      "id": "81",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 16,
+      "value": -16,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "99",
+        "call": "100",
+        "raise": "101"
+      }
+    },
+    "82": {
+      "id": "82",
+      "state": "twoPairLowLow",
+      "action": "raise",
+      "visits": 23,
+      "value": -19.9,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "102",
+        "call": "103"
+      }
+    },
+    "83": {
+      "id": "83",
+      "state": "fullHouseLowLow",
+      "action": "call",
+      "visits": 13,
+      "value": -13,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "104",
+        "raise": "105",
+        "call": "106"
+      }
+    },
+    "84": {
+      "id": "84",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 12,
+      "value": -12,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "85": {
+      "id": "85",
+      "state": "fullHouseLowLow",
+      "action": "raise",
+      "visits": 12,
+      "value": -12,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "raise": "107",
+        "call": "108",
+        "fold": "109"
+      }
+    },
+    "86": {
+      "id": "86",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 11,
+      "value": -11,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "110",
+        "fold": "111"
+      }
+    },
+    "87": {
+      "id": "87",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 11,
+      "value": -11,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "88": {
+      "id": "88",
+      "state": "twoPairLowLow",
+      "action": "deal",
+      "visits": 1,
+      "value": 1,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "89": {
+      "id": "89",
+      "state": "fullHouseLowLow",
+      "action": "deal",
+      "visits": 1,
+      "value": 1,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "90": {
+      "id": "90",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 8,
+      "value": -8,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "91": {
+      "id": "91",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 7,
+      "value": -7,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "call": "112",
+        "fold": "113",
+        "raise": "114"
+      }
+    },
+    "92": {
+      "id": "92",
+      "state": "highCardHigh",
+      "action": "raise",
+      "visits": 7,
+      "value": -7,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "115",
+        "fold": "116"
+      }
+    },
+    "93": {
+      "id": "93",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 10,
+      "value": -10,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "94": {
+      "id": "94",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 685,
+      "value": 324.80000000000285,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "117"
+      }
+    },
+    "95": {
+      "id": "95",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 31,
+      "value": -31,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "96": {
+      "id": "96",
+      "state": "royalFlush",
+      "action": "raise",
+      "visits": 5067,
+      "value": -51.0,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 1,
+      "children": {
+        "call": "118",
+        "fold": "119"
+      }
+    },
+    "97": {
+      "id": "97",
+      "state": "royalFlush",
+      "action": "call",
+      "visits": 99992535,
+      "value": 9999047.481132975,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "raise": "120",
+        "call": "121",
+        "fold": "122"
+      }
+    },
+    "98": {
+      "id": "98",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "99": {
+      "id": "99",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "100": {
+      "id": "100",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "101": {
+      "id": "101",
+      "state": "twoPairLowLow",
+      "action": "raise",
+      "visits": 13,
+      "value": 13,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "123",
+        "fold": "124"
+      }
+    },
+    "102": {
+      "id": "102",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 8,
+      "value": -8,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "103": {
+      "id": "103",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 14,
+      "value": -10.9,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "125"
+      }
+    },
+    "104": {
+      "id": "104",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "105": {
+      "id": "105",
+      "state": "fullHouseLowLow",
+      "action": "raise",
+      "visits": 10,
+      "value": 10,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "126",
+        "raise": "127",
+        "call": "128"
+      }
+    },
+    "106": {
+      "id": "106",
+      "state": "fullHouseLowLow",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 2,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "107": {
+      "id": "107",
+      "state": "fullHouseLowLow",
+      "action": "raise",
+      "visits": 9,
+      "value": 9,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "129",
+        "call": "130"
+      }
+    },
+    "108": {
+      "id": "108",
+      "state": "fullHouseLowLow",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "109": {
+      "id": "109",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "110": {
+      "id": "110",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 5,
+      "value": -5,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "131"
+      }
+    },
+    "111": {
+      "id": "111",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 5,
+      "value": -5,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "112": {
+      "id": "112",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "113": {
+      "id": "113",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "114": {
+      "id": "114",
+      "state": "highCardHigh",
+      "action": "raise",
+      "visits": 4,
+      "value": 4,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "132",
+        "call": "133"
+      }
+    },
+    "115": {
+      "id": "115",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 3,
+      "value": -3,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "134"
+      }
+    },
+    "116": {
+      "id": "116",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 3,
+      "value": -3,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "117": {
+      "id": "117",
+      "state": "threeHigh",
+      "action": "deal",
+      "visits": 684,
+      "value": -325.8000000000029,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "135",
+        "call": "136"
+      }
+    },
+    "118": {
+      "id": "118",
+      "state": "royalFlush",
+      "action": "call",
+      "visits": 5050,
+      "value": -34.0,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "137"
+      }
+    },
+    "119": {
+      "id": "119",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 16,
+      "value": -16,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "120": {
+      "id": "120",
+      "state": "royalFlush",
+      "action": "raise",
+      "visits": 379,
+      "value": -80.80000000000004,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "138",
+        "call": "139"
+      }
+    },
+    "121": {
+      "id": "121",
+      "state": "royalFlush",
+      "action": "call",
+      "visits": 99992124,
+      "value": 9998998.681133153,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "140"
+      }
+    },
+    "122": {
+      "id": "122",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 31,
+      "value": -31,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "123": {
+      "id": "123",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 6,
+      "value": -6,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "141",
+        "call": "142"
+      }
+    },
+    "124": {
+      "id": "124",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 6,
+      "value": -6,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "125": {
+      "id": "125",
+      "state": "highCardHigh",
+      "action": "deal",
+      "visits": 13,
+      "value": 9.9,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "143",
+        "call": "144"
+      }
+    },
+    "126": {
+      "id": "126",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 3,
+      "value": -3,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "127": {
+      "id": "127",
+      "state": "fullHouseLowLow",
+      "action": "raise",
+      "visits": 3,
+      "value": -3,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "fold": "145",
+        "call": "146"
+      }
+    },
+    "128": {
+      "id": "128",
+      "state": "fullHouseLowLow",
+      "action": "call",
+      "visits": 3,
+      "value": -3,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 3,
+      "streetRaiseCount": 1,
+      "children": {
+        "raise": "147",
+        "fold": "148"
+      }
+    },
+    "129": {
+      "id": "129",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 4,
+      "value": -4,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "130": {
+      "id": "130",
+      "state": "fullHouseLowLow",
+      "action": "call",
+      "visits": 4,
+      "value": -4,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {
+        "call": "149",
+        "fold": "150"
+      }
+    },
+    "131": {
+      "id": "131",
+      "state": "royalFlush",
+      "action": "deal",
+      "visits": 4,
+      "value": 4,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "151",
+        "call": "152"
+      }
+    },
+    "132": {
+      "id": "132",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 2,
+      "value": -2,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "133": {
+      "id": "133",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {}
+    },
+    "134": {
+      "id": "134",
+      "state": "royalFlush",
+      "action": "deal",
+      "visits": 2,
+      "value": 2,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "153"
+      }
+    },
+    "135": {
+      "id": "135",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 5,
+      "value": -5,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "136": {
+      "id": "136",
+      "state": "threeHigh",
+      "action": "call",
+      "visits": 678,
+      "value": 331.80000000000297,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "154",
+        "fold": "155"
+      }
+    },
+    "137": {
+      "id": "137",
+      "state": "threeHigh",
+      "action": "deal",
+      "visits": 5049,
+      "value": 33.0,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "156",
+        "call": "157"
+      }
+    },
+    "138": {
+      "id": "138",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 7,
+      "value": -7,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "139": {
+      "id": "139",
+      "state": "royalFlush",
+      "action": "call",
+      "visits": 371,
+      "value": 88.80000000000014,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 1,
+      "children": {
+        "fold": "158",
+        "call": "159"
+      }
+    },
+    "140": {
+      "id": "140",
+      "state": "straightLow",
+      "action": "deal",
+      "visits": 99992123,
+      "value": -9998997.781133156,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "river",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "160",
+        "raise": "161",
+        "fold": "162"
+      }
+    },
+    "141": {
+      "id": "141",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 3,
+      "value": -3,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "142": {
+      "id": "142",
+      "state": "twoPairLowLow",
+      "action": "call",
+      "visits": 2,
+      "value": -2,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "163"
+      }
+    },
+    "143": {
+      "id": "143",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 4,
+      "value": -4,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "144": {
+      "id": "144",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 8,
+      "value": -4.9,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "164",
+        "fold": "165"
+      }
+    },
+    "145": {
+      "id": "145",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "146": {
+      "id": "146",
+      "state": "fullHouseLowLow",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "147": {
+      "id": "147",
+      "state": "fullHouseLowLow",
+      "action": "raise",
+      "visits": 1,
+      "value": 1,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "flop",
+      "raiseCount": 4,
+      "streetRaiseCount": 2,
+      "children": {}
+    },
+    "148": {
+      "id": "148",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "149": {
+      "id": "149",
+      "state": "fullHouseLowLow",
+      "action": "call",
+      "visits": 2,
+      "value": -2,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "166"
+      }
+    },
+    "150": {
+      "id": "150",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "151": {
+      "id": "151",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 2,
+      "value": -2,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "152": {
+      "id": "152",
+      "state": "royalFlush",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "153": {
+      "id": "153",
+      "state": "royalFlush",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "154": {
+      "id": "154",
+      "state": "threeHigh",
+      "action": "call",
+      "visits": 672,
+      "value": 337.8000000000031,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "167"
+      }
+    },
+    "155": {
+      "id": "155",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 5,
+      "value": -5,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "156": {
+      "id": "156",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 16,
+      "value": -16,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "157": {
+      "id": "157",
+      "state": "threeHigh",
+      "action": "call",
+      "visits": 5032,
+      "value": -16.0,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "168",
+        "call": "169"
+      }
+    },
+    "158": {
+      "id": "158",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 6,
+      "value": -6,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "159": {
+      "id": "159",
+      "state": "royalFlush",
+      "action": "call",
+      "visits": 364,
+      "value": 95.8000000000002,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "170"
+      }
+    },
+    "160": {
+      "id": "160",
+      "state": "straightLow",
+      "action": "call",
+      "visits": 49902109,
+      "value": 4990081.099792855,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {
+        "raise": "171",
+        "fold": "172",
+        "call": "173"
+      }
+    },
+    "161": {
+      "id": "161",
+      "state": "straightLow",
+      "action": "raise",
+      "visits": 50089982,
+      "value": 5008948.699722568,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 1,
+      "children": {
+        "call": "174",
+        "fold": "175"
+      }
+    },
+    "162": {
+      "id": "162",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 31,
+      "value": -31,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "163": {
+      "id": "163",
+      "state": "fourHigh",
+      "action": "deal",
+      "visits": 1,
+      "value": 1,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "164": {
+      "id": "164",
+      "state": "highCardHigh",
+      "action": "call",
+      "visits": 4,
+      "value": -2.5,
+      "isNature": true,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "deal": "176"
+      }
+    },
+    "165": {
+      "id": "165",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 3,
+      "value": -3,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "166": {
+      "id": "166",
+      "state": "straightHigh",
+      "action": "deal",
+      "visits": 1,
+      "value": 1,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "turn",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "167": {
+      "id": "167",
+      "state": "fourHigh",
+      "action": "deal",
+      "visits": 671,
+      "value": -338.8000000000031,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "177",
+        "call": "178"
+      }
+    },
+    "168": {
+      "id": "168",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 16,
+      "value": -16,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "169": {
+      "id": "169",
+      "state": "threeHigh",
+      "action": "call",
+      "visits": 5015,
+      "value": 0.0,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "170": {
+      "id": "170",
+      "state": "straightFlush",
+      "action": "deal",
+      "visits": 363,
+      "value": -96.8000000000002,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "179",
+        "fold": "180"
+      }
+    },
+    "171": {
+      "id": "171",
+      "state": "straightLow",
+      "action": "raise",
+      "visits": 25018217,
+      "value": -2501741.401181034,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 1,
+      "children": {
+        "call": "181",
+        "fold": "182"
+      }
+    },
+    "172": {
+      "id": "172",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 44,
+      "value": -44,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "173": {
+      "id": "173",
+      "state": "straightLow",
+      "action": "call",
+      "visits": 24883847,
+      "value": -2488384.7011685916,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "showdown",
+      "raiseCount": 3,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "174": {
+      "id": "174",
+      "state": "straightLow",
+      "action": "call",
+      "visits": 50089937,
+      "value": -5008993.699722397,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "175": {
+      "id": "175",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 44,
+      "value": -44,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "176": {
+      "id": "176",
+      "state": "pairLow",
+      "action": "deal",
+      "visits": 3,
+      "value": 3,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "fold": "183",
+        "call": "184"
+      }
+    },
+    "177": {
+      "id": "177",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 5,
+      "value": -5,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "178": {
+      "id": "178",
+      "state": "fourHigh",
+      "action": "call",
+      "visits": 665,
+      "value": 343.0000000000032,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "185",
+        "fold": "186"
+      }
+    },
+    "179": {
+      "id": "179",
+      "state": "straightFlush",
+      "action": "call",
+      "visits": 356,
+      "value": 103.80000000000028,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {
+        "call": "187",
+        "fold": "188"
+      }
+    },
+    "180": {
+      "id": "180",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 6,
+      "value": -6,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "181": {
+      "id": "181",
+      "state": "straightLow",
+      "action": "call",
+      "visits": 25018187,
+      "value": 2501771.4011810604,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 1,
+      "children": {
+        "call": "189",
+        "fold": "190"
+      }
+    },
+    "182": {
+      "id": "182",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 29,
+      "value": -29,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "183": {
+      "id": "183",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "184": {
+      "id": "184",
+      "state": "pairLow",
+      "action": "call",
+      "visits": 1,
+      "value": -1,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "river",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "185": {
+      "id": "185",
+      "state": "fourHigh",
+      "action": "call",
+      "visits": 559,
+      "value": -447.2000000000042,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "186": {
+      "id": "186",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 105,
+      "value": -105,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "187": {
+      "id": "187",
+      "state": "straightFlush",
+      "action": "call",
+      "visits": 241,
+      "value": -216.9000000000009,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "188": {
+      "id": "188",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 114,
+      "value": -114,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "189": {
+      "id": "189",
+      "state": "straightLow",
+      "action": "call",
+      "visits": 25018144,
+      "value": -2501814.401181099,
+      "isNature": false,
+      "isOpponent": true,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    },
+    "190": {
+      "id": "190",
+      "state": "terminal",
+      "action": "fold",
+      "visits": 42,
+      "value": -42,
+      "isNature": false,
+      "isOpponent": false,
+      "street": "showdown",
+      "raiseCount": 4,
+      "streetRaiseCount": 0,
+      "children": {}
+    }
+  }
+}
