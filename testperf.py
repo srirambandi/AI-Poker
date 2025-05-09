@@ -12,7 +12,7 @@ from randomplayer import RandomPlayer
 from raise_player import RaisedPlayer
 from pokerBotPlayer import PokerBotPlayer
 from AI13Player import AI13Player
-from hand_evaluator import HeuristicPlayer
+from hand_player import HandPlayer
 # from smartwarrior import SmartWarrior
 """ ========================================================= """
 
@@ -28,7 +28,7 @@ python3 testperf.py -n1 "oldBot" -a1 PokerBotPlayer -n2 "newBot" -a2 PokerBotPla
 def testperf(agent_name1, agent1_class, agent_name2, agent2_class):		
 
 	# Init to play 500 games of 1000 rounds
-	num_game = 100
+	num_game = 500
 	max_round = 1000
 	initial_stack = 10000
 	smallblind_amount = 20
@@ -47,7 +47,7 @@ def testperf(agent_name1, agent1_class, agent_name2, agent2_class):
         'RaisedPlayer': RaisedPlayer,
         'PokerBotPlayer': PokerBotPlayer,
 		'AI13Player': AI13Player,
-		'HandPlayer': HeuristicPlayer
+		'HandPlayer': HandPlayer
     }
     
 	agent1 = player_classes[agent1_class]()
