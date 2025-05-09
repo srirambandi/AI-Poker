@@ -494,4 +494,4 @@ def trainMCTS(iterations=10000, simulationsPerIteration=100):
 	
 	return tree
 
-trainMCTS(iterations=1000, simulationsPerIteration=100)
+# trainMCTS(iterations=1000, simulationsPerIteration=100)
