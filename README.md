@@ -1,5 +1,7 @@
 ## Term Project
 
+This Poker agent implements an MCTS based AI player to play a 2 player limit Texas Hold'em game. The final report goes in depth into the implementation details.
+
 ### Set up environment
 using the conda or pyenv
 
